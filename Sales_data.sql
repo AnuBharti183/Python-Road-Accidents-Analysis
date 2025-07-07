@@ -44,7 +44,8 @@ ALTER TABLE Sales_Data
 DROP COLUMN [Order Date]
 
 
-
+-------------------------------------------------------------------------------
+-- Adding a few columns to normalise data
 
 
 ALTER TABLE Sales_Data
@@ -61,8 +62,6 @@ SET Country =
 
 
 
-
-
 ALTER TABLE Sales_Data
 ADD State VARCHAR(20)
 
@@ -74,8 +73,6 @@ SET State =
         ELSE NULL 
     END 
 FROM Sales_Data;
-
-
 
 
 
